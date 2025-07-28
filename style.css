@@ -131,6 +131,7 @@ header nav a {
   color: #444444;
   font-size: 1.1em;
 }
+
 .services-card {
   max-width: 800px;
   margin: 50px auto;
@@ -166,6 +167,73 @@ header nav a {
   padding-left: 12px;
 }
 
+/* Testimonials */
+.testimonials {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #f0f0f0;
+  border-left: 6px solid #DDAF64;
+  border-radius: 8px;
+}
+
+.testimonials h3 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.testimonials blockquote {
+  font-style: italic;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.testimonials footer {
+  font-style: normal;
+  font-weight: 500;
+  margin-top: -10px;
+  color: #285333;
+}
+
+/* Logo Wall */
+.logo-wall {
+  max-width: 900px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.logo-wall h3 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.logo-wall .logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.logo-wall img {
+  max-height: 60px;
+  max-width: 120px;
+  object-fit: contain;
+}
+
+/* Social Links */
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #285333;
+  font-weight: 500;
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -177,4 +245,11 @@ footer {
 footer a {
   color: #285333;
   text-decoration: none;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
 }
