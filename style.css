@@ -131,6 +131,40 @@ header nav a {
   color: #444444;
   font-size: 1.1em;
 }
+.services-card {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-left: 8px solid #DDAF64;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.services-card h3 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.services-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.services-card li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.services-card blockquote {
+  font-style: italic;
+  color: #444;
+  margin-top: 20px;
+  border-left: 4px solid #DDAF64;
+  padding-left: 12px;
+}
 
 /* Footer */
 footer {
