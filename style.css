@@ -1,4 +1,4 @@
-/* Base Styling */
+/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
@@ -44,13 +44,13 @@ header nav {
 
 header nav a {
   color: #ffffff;
-  margin: 0 12px;
+  margin: 0 15px;
   text-decoration: none;
   font-weight: 500;
   font-size: 1em;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
   max-width: 800px;
   margin: 50px auto;
@@ -74,7 +74,6 @@ header nav a {
   color: #333333;
 }
 
-/* Button */
 .button {
   display: inline-block;
   margin-top: 20px;
@@ -91,10 +90,57 @@ header nav a {
   background-color: #c49d52;
 }
 
+/* What We Do */
+.services-section {
+  max-width: 900px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.services-section h3 {
+  font-size: 1.8em;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.03);
+}
+
+.service-card h4 {
+  font-size: 1.2em;
+  color: #285333;
+  margin-bottom: 10px;
+}
+
+/* Quote */
+.quote-block {
+  text-align: center;
+  margin: 60px auto;
+  font-style: italic;
+  color: #444444;
+  font-size: 1.1em;
+}
+
 /* Footer */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 30px 20px;
   font-size: 0.9em;
   color: #666666;
+}
+
+footer a {
+  color: #285333;
+  text-decoration: none;
 }
