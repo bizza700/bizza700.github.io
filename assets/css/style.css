@@ -9,6 +9,7 @@ body {
 html {
   scroll-behavior: smooth;
 }
+/*Navbar*/
 
 .navbar {
   display: flex;
@@ -73,11 +74,47 @@ nav a.active {
   box-shadow: 0 0 12px rgba(221, 175, 100, 0.7);
 }
 
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+  }
+
+  .nav-group {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 16px;
+    margin-top: 16px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav a {
+    margin: 8px 0;
+  }
+}
+
+
+/*Hero Section*/
+
+
 .hero {
   text-align: center;
   padding: 140px 40px 100px;
   position: relative;
   overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 80px 20px 60px;
+  }
 }
 
 .hero::before {
@@ -108,21 +145,19 @@ nav a.active {
   margin-bottom: 20px;
 }
 
-h1 {
-  font-size: 54px;
-  font-weight: 700;
-  margin: 0 0 20px 0;
-  color: #fff;
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
 }
 
-.subtitle {
-  font-size: 18px;
-  color: #bbb;
-  margin-bottom: 40px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
+
+/*Cards section*/
 
 .metrics {
   display: flex;
@@ -145,6 +180,11 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .card {
+    padding: 20px 24px;
+  }
+}
 
 .card h2 {
   font-size: 38px;
@@ -162,6 +202,9 @@ h1 {
   width: 70px;
   margin-top: 20px;
 }
+
+
+/*Footer*/
 
 footer {
   background-color: #0a0a0a;
@@ -235,6 +278,24 @@ footer {
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter input[type="email"] {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .newsletter button {
+    width: 100%;
+  }
+}
+
 .footer-bottom {
   width: 100%;
   text-align: center;
@@ -279,13 +340,19 @@ footer {
   }
   }
 
+/*About Section in About page*/
 .about-section {
-  background-color: #000; /* or your preferred dark tone */
+  background-color: #000; 
   padding: 4rem 2rem;
   color: #fff;
   max-width: 1200px;
   margin: 0 auto;
   z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  .about-section {
+    padding: 2rem 1rem;
+  }
 }
 
 .about-section h2 {
@@ -308,6 +375,14 @@ footer {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+  .about-columns {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+
 .about-card {
   flex: 1 1 250px;
   background-color: #111;
@@ -328,8 +403,10 @@ footer {
   font-size: 1rem;
 }
 
+
+/*
 .contact-form {
-  background-color: #000; /* Match your site theme */
+  background-color: #000; 
   padding: 4rem 1rem;
   display: flex;
   justify-content: center;
@@ -372,4 +449,4 @@ footer {
   align-self: flex-start;
   padding: 0.75rem 1.5rem;
 }
- 
+ */
