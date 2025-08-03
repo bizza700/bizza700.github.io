@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Services offered by Advanced Bytes to streamline and innovate your technology operations." />
+  <meta name="description" content="Blog Templarte from  Advanced Bytes" />
   <meta name="author" content="Advanced Bytes LLC">
-  <title>Our Services | Advanced Bytes</title>
+  <title>Blog | Advanced Bytes</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papNMjDd2rt0Qv5ZDWv6JvG2p90E6Gx0z+eDv9q2If0J0dq9mctzK3uHgUfDq+sr5KzU5j9q20kCuNU4j0Wzjg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />  <!-- Adds scroll animations -->
   <link href="../assets/css/style.css" rel="stylesheet">
 </head>
@@ -24,38 +23,35 @@
     <div class="nav-group">
       <nav>
         <a href="../index.html">Home</a>
-        <a href="../pages/about.html">About</a>
-        <a href="../pages/services.html" >Services</a>
-        <a href="#" class="active">Blogs</a>
+        <a href="../pages/about.html" class="active">About</a>
+        <a href="../pages/services.html">Services</a>
+        <a href="../pages/resources.html">Resources</a>
       </nav>
-      <a href="pages/contact.html" class="button">Contact Us</a>
+      <a href="../pages/contact.html" class="button">Contact Us</a>
     </div>
   </header>
 
 <!-- Content Section-->
   <div class="hero">
-    <div class="tag">OUR SERVICES</div>
-    <h1>Strategic Technology, Simplified</h1>
-    <p class="subtitle">Explore how Advanced Bytes can help you turn complex challenges into streamlined, people-centered solutions.</p>
+    <div class="tag">INSIGHTS & RESOURCES</div>
+    <h1>Blog title placeholder</h1>
+    <p class="subtitle">Blog publish Date</p>
   </div>
 
-  <section class="metrics">
-    <div class="card" data-aos="fade-up" data-aos-delay="200">
-      <h2>Strategy & Governance</h2>
-      <p>We guide organizations in aligning goals to actionable plans that lead to measurable outcomes, focusing on board and executive leadership.</p>
-      <img src="../assets/icons/strategy-icon.png" alt="Strategy Icon">
+<section class="about-section">
+  <h2>Title of Resources</h2>
+  <p>
+    Contenct of the adticle.
+  </p>
+
+  <div class="about-columns">
+    <div class="about-card">
+      <h3>Strategy & Governance</h3>
+      <p>Facilitated planning aligned to measurable organizational impact for nonprofits, civic boards, and institutional leaders.</p>
     </div>
-    <div class="card" data-aos="fade-up" data-aos-delay="200">
-      <h2>Data-Driven Systems</h2>
-      <p>We design tools and reports that support visibility, transparency, and strategic action using your organization's existing platforms.</p>
-      <img src="../assets/icons/datadriven-icon.png" alt="Data Driven Icon">
-    </div>
-    <div class="card" data-aos="fade-up" data-aos-delay="200">
-      <h2>Platform Enablement</h2>
-      <p>We streamline operations by configuring systems and automating workflows to increase efficiency and reduce manual effort.</p>
-      <img src="../assets/icons/platform-icon.png" alt="Platform Icon">
-    </div>
-  </section>
+  </div>
+</section>
+
 
 <!-- Footer Section-->
   <footer>
@@ -67,35 +63,46 @@
     </div>
     <div class="footer-column">
       <h4>Explore</h4>
-      <a href="index.html">Home</a>
+      <a href="../index.html">Home</a>
       <a href="../pages/about.html">About</a>
       <a href="../pages/services.html">Services</a>
-      <a href="../pages/blog.html">Blog</a>
+      <a href="../pages/resources.html">Resources</a>
       <a href="../pages/contact.html">Contact</a>
     </div>
     <div class="footer-column">
       <h4>Connect</h4>
       <a href="https://www.facebook.com/advancedbytes">Facebook</a>
-      <a href="#">Instagram</a>
+      <a href="https://x.com/AdvancedBytes">-X-</a>
     </div>
-    <div class="footer-column newsletter">
+     <div class="footer-column newsletter">
       <h4>Newsletter</h4>
-      <label for="email">Stay updated</label>
-      <form>
-        <input type="email" id="email" name="email" placeholder="Email address">
-        <button type="submit" class="button">Subscribe</button>
-      </form>
+      <label for="newsletter-email">Stay updated</label>
+    <!-- Newsletter Form -->
+    <form id="newsletter-form">
+      <input type="email" id="newsletter-email" placeholder="Enter your email" required />
+      <button type="submit" class="button">Subscribe</button>
+    </form>
+
+    <!-- Pop-up message -->
+    <div id="subscribe-popup" style="display: none; position: fixed; bottom: 30px; right: 30px; background: #285333; color: white; padding: 12px 18px; border-radius: 8px; font-weight: 500; box-shadow: 0 4px 6px rgba(0,0,0,0.2); z-index: 1000;">
+      🎉 Thank you for subscribing!
+    </div>
+
+
     </div>
     <div class="footer-bottom">
       © 2025 Advanced Bytes. All rights reserved.
     </div>
   </footer>
-
+  
 <!-- Scroll Animations script reference-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
 
+<script src="../assets/scripts/newsletter.js"></script>
+
+  
 </body>
 </html>
