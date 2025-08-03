@@ -96,24 +96,35 @@
       <a href="https://www.facebook.com/advancedbytes">Facebook</a>
       <a href="https://x.com/AdvancedBytes">-X-</a>
     </div>
-    <div class="footer-column newsletter">
+     <div class="footer-column newsletter">
       <h4>Newsletter</h4>
       <label for="email">Stay updated</label>
-      <form>
-        <input type="email" id="email" name="email" placeholder="Email address">
-        <button type="submit" class="button">Subscribe</button>
-      </form>
+    <!-- Newsletter Form -->
+    <form id="newsletter-form">
+      <input type="email" id="newsletter-email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+
+    <!-- Pop-up message -->
+    <div id="subscribe-popup" style="display: none; position: fixed; bottom: 30px; right: 30px; background: #285333; color: white; padding: 12px 18px; border-radius: 8px; font-weight: 500; box-shadow: 0 4px 6px rgba(0,0,0,0.2); z-index: 1000;">
+      🎉 Thank you for subscribing!
+    </div>
+
+
     </div>
     <div class="footer-bottom">
       © 2025 Advanced Bytes. All rights reserved.
     </div>
   </footer>
-
+  
 <!-- Scroll Animations script reference-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
 
+<script src="../assets/scripts/newsletter.js"></script>
+
+  
 </body>
 </html>
