@@ -1,30 +1,27 @@
 document.getElementById('newsletter-form').addEventListener('submit', async function (e) {
-e.preventDefault(); // Prevent page refresh
+  e.preventDefault();
 
-const email = document.getElementById('newsletter-email').value;
-const messageEl = document.getElementById('subscribe-message');
+  const email = document.getElementById('newsletter-email').value;
 
-try {
+  try {
     const response = await fetch('https://newsletter-form-handler.onrender.com/subscribe', {
-    method: 'POST',
-    headers: {
+      method: 'POST',
+      headers: {
         'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ email })
+      },
+      body: JSON.stringify({ email })
     });
 
     if (response.ok) {
-    messageEl.textContent = '🎉 Thank you for subscribing!';
-    messageEl.style.color = 'green';
-    document.getElementById('newsletter-form').reset();
+      const popup = document.getElementById('subscribe-popup');
+      popup.style.display = 'block';
+      setTimeout(() => popup.style.display = 'none', 4000);
+      document.getElementById('newsletter-form').reset();
     } else {
-    const errorText = await response.text();
-    messageEl.textContent = `Error: ${errorText}`;
-    messageEl.style.color = 'red';
+      alert('Error subscribing: ' + (await response.text()));
     }
-} catch (error) {
-    messageEl.textContent = 'Something went wrong. Please try again later.';
-    messageEl.style.color = 'red';
-    console.error(error);
-}
+  } catch (err) {
+    alert('Network error. Check console.');
+    console.error(err);
+  }
 });
